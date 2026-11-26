@@ -1,26 +1,35 @@
 # Maach & Makki
 
-Build a beautiful website  with a attractive landing page and 2 and 3 more additional pages with images and menus for my cloud kitchen named Happy Hours. It will be a authentic bengali cuisie ad pujabi tadka masala. The website will be accessed by 8 to 80. Quick and beautiful one. Also add a page to take whatsapp payment with  a demo QR along with customer feedbacks.
+*Flavours of Bengal & Punjab*
 
-This project was built with [Lovable](https://lovable.dev).
+A website celebrating Bengali and Punjabi cuisine in one place. It showcases signature dishes from both regions, from fish curries and mishti in Bengal to makki di roti, sarson da saag and tandoori dishes in Punjab.
 
-**Live app**: https://bengali-punjabi-kitchen.lovable.app
+**Live site:** [bengali-punjabi-kitchen.lovable.app](https://bengali-punjabi-kitchen.lovable.app/)
 
-## Build with Lovable
+## Problem Statement
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/6b5fd6c2-c9be-4315-a0ec-4c9381d055ca).
+Bengali and Punjabi food are loved across India, but authentic recipes and dish stories are scattered across blogs, videos and social media. Beginners find it hard to learn the dishes, ingredients and cooking styles of each region without searching many sources. Maach & Makki brings both cuisines together in one simple, visual website.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Tech Stack
 
-## Development
+- React + TypeScript
+- Vite
+- Tailwind CSS + shadcn/ui
+- Built with [Lovable](https://lovable.dev)
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Run Locally
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
+git clone https://github.com/your-username/bengali-punjabi-kitchen.git
+cd bengali-punjabi-kitchen
+npm install
 npm run dev
 ```
+
+## Category
+
+Web Development · Food & Beverage · Cuisine Showcase
+
+## Status
+
+Experimental project.
