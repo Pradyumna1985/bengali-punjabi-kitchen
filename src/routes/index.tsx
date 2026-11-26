@@ -10,13 +10,13 @@ import { INITIAL_FEEDBACKS, KITCHEN_INFO } from "@/data/kitchen";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Happy Hours — Authentic Bengali Cuisine & Punjabi Tadka Masala" },
+      { title: "Maach & Makki — Authentic Bengali Cuisine & Punjabi Tadka Masala" },
       {
         name: "description",
         content:
-          "Order freshly cooked Bengali classics and Punjabi tadka masala from Happy Hours cloud kitchen. Delivering across Kanchrapara, Kalyani, and Halisahar.",
+          "Order freshly cooked Bengali classics and Punjabi tadka masala from Maach & Makki cloud kitchen. Delivering across Kanchrapara, Kalyani, and Halisahar.",
       },
-      { property: "og:title", content: "Happy Hours — Bengali & Punjabi Cloud Kitchen" },
+      { property: "og:title", content: "Maach & Makki — Bengali & Punjabi Cloud Kitchen" },
       {
         property: "og:description",
         content: "Authentic Bengali Cuisine & Punjabi Tadka Masala delivered in Kanchrapara, Kalyani & Halisahar.",
@@ -46,7 +46,7 @@ function Index() {
             Authentic Bengali warmth meets sizzling Punjabi tadka.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-hero-foreground/90 sm:text-xl">
-            Freshly cooked home-style meals from Happy Hours cloud kitchen — crafted for every
+            Freshly cooked home-style meals from Maach & Makki cloud kitchen — crafted for every
             generation at the table, from age 8 to 80.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">

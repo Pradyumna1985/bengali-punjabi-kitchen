@@ -3,13 +3,13 @@ import bengaliSnacksImg from "@/assets/bengali-sweets-snacks.jpg";
 import punjabiTadkaImg from "@/assets/punjabi-tadka.jpg";
 
 export const KITCHEN_INFO = {
-  name: "Happy Hours",
+  name: "Maach & Makki",
   tagline: "Authentic Bengali Cuisine & Punjabi Tadka Masala",
   whatsappDigits: "918336068750",
   whatsappDisplay: "+91 83360 68750",
   deliveryZones: ["Kanchrapara", "Kalyani", "Halisahar"] as const,
   deliverySummary: "Delivering only across Kanchrapara, Kalyani & Halisahar",
-  demoUpiId: "happyhours.demo@upi",
+  demoUpiId: "maachandmakki.demo@upi",
   hours: "Daily, 11:30 AM – 10:30 PM",
 };
 

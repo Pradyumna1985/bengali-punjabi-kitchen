@@ -9,13 +9,13 @@ import { KITCHEN_INFO, MENU_ITEMS, buildWhatsAppUrl, type MenuItem } from "@/dat
 export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
-      { title: "Menu — Happy Hours | Bengali Cuisine & Punjabi Tadka Masala" },
+      { title: "Menu — Maach & Makki | Bengali Cuisine & Punjabi Tadka Masala" },
       {
         name: "description",
         content:
-          "Browse authentic Bengali dishes and Punjabi tadka masala with photos and prices at Happy Hours. Delivering in Kanchrapara, Kalyani, and Halisahar.",
+          "Browse authentic Bengali dishes and Punjabi tadka masala with photos and prices at Maach & Makki. Delivering in Kanchrapara, Kalyani, and Halisahar.",
       },
-      { property: "og:title", content: "Happy Hours Menu" },
+      { property: "og:title", content: "Maach & Makki Menu" },
       {
         property: "og:description",
         content: "Shorshe Ilish, Kosha Mangsho, Punjabi Dal Tadka Masala, Paneer Butter Masala, and more.",
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/menu")({
 });
 
 function DishCard({ item }: { item: MenuItem }) {
-  const orderMessage = `Hi Happy Hours! I would like to order 1x ${item.name} (₹${item.price}).`;
+  const orderMessage = `Hi Maach & Makki! I would like to order 1x ${item.name} (₹${item.price}).`;
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card">
       <img src={item.image} alt={item.name} className="aspect-[16/10] w-full object-cover" />

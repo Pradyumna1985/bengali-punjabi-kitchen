@@ -80,13 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Happy Hours — Authentic Bengali Cuisine & Punjabi Tadka Masala" },
+      { title: "Maach & Makki — Authentic Bengali Cuisine & Punjabi Tadka Masala" },
       {
         name: "description",
         content:
-          "Happy Hours cloud kitchen delivering authentic Bengali cuisine and Punjabi tadka masala across Kanchrapara, Kalyani, and Halisahar.",
+          "Maach & Makki cloud kitchen delivering authentic Bengali cuisine and Punjabi tadka masala across Kanchrapara, Kalyani, and Halisahar.",
       },
-      { property: "og:title", content: "Happy Hours Cloud Kitchen" },
+      { property: "og:title", content: "Maach & Makki Cloud Kitchen" },
       {
         property: "og:description",
         content: "Authentic Bengali Cuisine & Punjabi Tadka Masala delivered in Kanchrapara, Kalyani & Halisahar.",
@@ -166,7 +166,7 @@ function RootComponent() {
                 </Link>
               ))}
               <a
-                href={buildWhatsAppUrl("Hi Happy Hours! I would like to place an order.")}
+                href={buildWhatsAppUrl("Hi Maach & Makki! I would like to place an order.")}
                 target="_blank"
                 rel="noreferrer"
                 className="ml-2 inline-flex items-center gap-2 rounded-xl bg-whatsapp px-4 py-2.5 text-base font-semibold text-whatsapp-foreground transition-colors hover:bg-whatsapp/90"

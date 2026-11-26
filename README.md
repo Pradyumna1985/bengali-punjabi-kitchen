@@ -1,4 +1,4 @@
-# Bengali Punjabi Kitchen
+# Maach & Makki
 
 Build a beautiful website  with a attractive landing page and 2 and 3 more additional pages with images and menus for my cloud kitchen named Happy Hours. It will be a authentic bengali cuisie ad pujabi tadka masala. The website will be accessed by 8 to 80. Quick and beautiful one. Also add a page to take whatsapp payment with  a demo QR along with customer feedbacks.
 

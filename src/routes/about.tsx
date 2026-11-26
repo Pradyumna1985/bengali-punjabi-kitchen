@@ -8,13 +8,13 @@ import { KITCHEN_INFO } from "@/data/kitchen";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Our Kitchen — Happy Hours Cloud Kitchen" },
+      { title: "Our Kitchen — Maach & Makki Cloud Kitchen" },
       {
         name: "description",
         content:
-          "Meet Happy Hours cloud kitchen: fresh whole spices, traditional Bengali mustard recipes, and Punjabi ghee tadka delivered in Kanchrapara, Kalyani, and Halisahar.",
+          "Meet Maach & Makki cloud kitchen: fresh whole spices, traditional Bengali mustard recipes, and Punjabi ghee tadka delivered in Kanchrapara, Kalyani, and Halisahar.",
       },
-      { property: "og:title", content: "Our Kitchen — Happy Hours" },
+      { property: "og:title", content: "Our Kitchen — Maach & Makki" },
       {
         property: "og:description",
         content: "Freshly cooked Bengali cuisine and Punjabi tadka masala for every generation.",
@@ -36,7 +36,7 @@ function AboutPage() {
               Cooked with care for every plate, from age 8 to 80
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-              Happy Hours started with one joyful idea: a family should never have to choose between
+              Maach & Makki started with one joyful idea: a family should never have to choose between
               the comforting aroma of Bengali mustard curry and the rich warmth of Punjabi tadka
               masala. Both belong hot on the same dinner table.
             </p>

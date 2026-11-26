@@ -14,21 +14,21 @@ import {
   type DeliveryZone,
 } from "@/data/kitchen";
 
-const FEEDBACK_STORAGE_KEY = "happy-hours-feedbacks-v1";
+const FEEDBACK_STORAGE_KEY = "maach-and-makki-feedbacks-v1";
 
 export const Route = createFileRoute("/order")({
   head: () => ({
     meta: [
-      { title: "WhatsApp Payment & Customer Feedbacks — Happy Hours" },
+      { title: "WhatsApp Payment & Customer Feedbacks — Maach & Makki" },
       {
         name: "description",
         content:
-          "Scan the Happy Hours demo WhatsApp/UPI payment QR, confirm your order to +91 83360 68750, and read customer feedbacks from Kanchrapara, Kalyani, and Halisahar.",
+          "Scan the Maach & Makki demo WhatsApp/UPI payment QR, confirm your order to +91 83360 68750, and read customer feedbacks from Kanchrapara, Kalyani, and Halisahar.",
       },
-      { property: "og:title", content: "WhatsApp Pay & Customer Feedbacks — Happy Hours" },
+      { property: "og:title", content: "WhatsApp Pay & Customer Feedbacks — Maach & Makki" },
       {
         property: "og:description",
-        content: "Easy WhatsApp payment QR and real customer reviews for Happy Hours cloud kitchen.",
+        content: "Easy WhatsApp payment QR and real customer reviews for Maach & Makki cloud kitchen.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -66,7 +66,7 @@ function DemoPaymentQr() {
     <svg
       viewBox="0 0 25 25"
       role="img"
-      aria-label="Demo WhatsApp and UPI payment QR code for Happy Hours"
+      aria-label="Demo WhatsApp and UPI payment QR code for Maach & Makki"
       className="mx-auto size-52 rounded-xl border-2 border-border bg-card p-3 text-foreground"
     >
       {modules.map((row, y) =>
@@ -128,7 +128,7 @@ function OrderAndFeedbackPage() {
 
     setPayError("");
     const msg = [
-      `Hi Happy Hours!`,
+      `Hi Maach & Makki!`,
       `Name: ${trimmedName}`,
       `Delivery Area: ${deliveryZone}`,
       `Order: ${trimmedItems}`,
@@ -192,7 +192,7 @@ function OrderAndFeedbackPage() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary">
             Demo WhatsApp / UPI QR
           </p>
-          <h2 className="mt-2 text-2xl font-bold text-foreground">Scan to Pay Happy Hours</h2>
+          <h2 className="mt-2 text-2xl font-bold text-foreground">Scan to Pay Maach &amp; Makki</h2>
           <div className="mt-5">
             <DemoPaymentQr />
           </div>
