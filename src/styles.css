@@ -199,6 +199,70 @@
   }
 }
 
+.cursor-cooker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 68px;
+  height: 72px;
+  pointer-events: none;
+  opacity: 0;
+  filter: drop-shadow(0 5px 5px color-mix(in oklab, var(--foreground) 16%, transparent));
+  transition: opacity 180ms ease;
+  will-change: transform;
+}
+
+.cursor-cooker[data-visible="true"] {
+  opacity: 0.92;
+}
+
+.cursor-cooker__steam-wisp {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  animation: cursor-steam 2.8s ease-in-out infinite;
+}
+
+.cursor-cooker__steam-wisp--two {
+  animation-delay: -1.8s;
+}
+
+.cursor-cooker__steam-wisp--three {
+  animation-delay: -0.9s;
+}
+
+.cursor-cooker__utensil {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  animation: cursor-ladle 3.6s ease-in-out infinite;
+}
+
+@keyframes cursor-steam {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(3px) scale(0.94);
+  }
+  35%, 65% {
+    opacity: 0.62;
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-4px) scale(1.04);
+  }
+}
+
+@keyframes cursor-ladle {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@media (pointer: coarse), (hover: none), (prefers-reduced-motion: reduce) {
+  .cursor-cooker {
+    display: none;
+  }
+}
+
 @utility hero-scrim {
   background: linear-gradient(
     105deg,
