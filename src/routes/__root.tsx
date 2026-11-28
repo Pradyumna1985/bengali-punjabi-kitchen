@@ -14,6 +14,7 @@ import { Menu, X, PhoneCall } from "lucide-react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { KITCHEN_INFO, buildWhatsAppUrl } from "@/data/kitchen";
+import { BrandMark } from "@/components/BrandMark";
 
 function NotFoundComponent() {
   return (
@@ -105,7 +106,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
@@ -143,14 +144,9 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col bg-background text-foreground">
         <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur-sm">
-          <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6">
-            <Link to="/" className="flex flex-col leading-tight">
-              <span className="font-display text-2xl font-bold tracking-tight text-primary">
-                {KITCHEN_INFO.name}
-              </span>
-              <span className="text-xs font-medium text-muted-foreground">
-                Bengali &amp; Punjabi Cloud Kitchen
-              </span>
+          <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6">
+            <Link to="/" className="shrink-0">
+              <BrandMark size="header" subtitle="Bengali & Punjabi Cloud Kitchen" />
             </Link>
 
             <nav aria-label="Main navigation" className="hidden items-center gap-2 md:flex">
@@ -213,8 +209,8 @@ function RootComponent() {
         <footer className="border-t border-border bg-saffron-band">
           <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
             <div>
-              <p className="font-display text-2xl font-bold text-primary">{KITCHEN_INFO.name}</p>
-              <p className="mt-1 text-base text-foreground">{KITCHEN_INFO.deliverySummary}</p>
+              <BrandMark size="footer" />
+              <p className="mt-3 text-base text-foreground">{KITCHEN_INFO.deliverySummary}</p>
               <p className="mt-1 text-sm text-muted-foreground">
                 {KITCHEN_INFO.hours} &middot; WhatsApp: {KITCHEN_INFO.whatsappDisplay}
               </p>
