@@ -64,47 +64,38 @@ export function CursorCooker() {
 
   return (
     <div ref={followerRef} className="cursor-cooker" data-visible="false" aria-hidden="true">
-      <svg viewBox="0 0 76 84" fill="none" role="presentation">
-        <defs>
-          <linearGradient id="cursor-handi-body" x1="20" y1="28" x2="49" y2="53" gradientUnits="userSpaceOnUse">
-            <stop stopColor="var(--accent)" />
-            <stop offset="0.55" stopColor="var(--primary)" />
-            <stop offset="1" stopColor="var(--foreground)" />
-          </linearGradient>
-          <linearGradient id="cursor-chulha-body" x1="17" y1="52" x2="56" y2="76" gradientUnits="userSpaceOnUse">
-            <stop stopColor="var(--brand-ring)" />
-            <stop offset="1" stopColor="var(--primary)" />
-          </linearGradient>
-        </defs>
-
-        <g className="cursor-cooker__steam" stroke="var(--muted-foreground)" strokeWidth="2" strokeLinecap="round">
+      <svg viewBox="0 0 76 84" fill="none" role="presentation" stroke="var(--cursor-sketch)">
+        <g className="cursor-cooker__steam" strokeWidth="1.5" strokeLinecap="round">
           <path className="cursor-cooker__steam-wisp cursor-cooker__steam-wisp--one" d="M27 24C21 19 30 15 25 9C23 6 24 4 26 2" />
           <path className="cursor-cooker__steam-wisp cursor-cooker__steam-wisp--two" d="M37 22C32 17 42 13 37 7C35 5 36 3 38 1" />
           <path className="cursor-cooker__steam-wisp cursor-cooker__steam-wisp--three" d="M47 24C43 20 51 17 48 12" />
         </g>
 
-        <g className="cursor-cooker__utensil" stroke="var(--foreground)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M51 48L62 23" stroke="var(--brand-ring)" strokeWidth="3.4" />
-          <ellipse cx="64" cy="18" rx="4.5" ry="7" transform="rotate(20 64 18)" fill="var(--brand-ring)" />
-          <path d="M62 14C64 16 65 19 65 22" stroke="var(--accent)" strokeWidth="1.1" opacity="0.75" />
+        <g className="cursor-cooker__utensil" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M51 48L62 23" />
+          <ellipse cx="64" cy="18" rx="4.5" ry="7" transform="rotate(20 64 18)" />
+          <path className="cursor-cooker__faint" d="M61.5 14.5C63.5 16.5 64.6 19 64.8 22" strokeWidth="1" />
         </g>
 
-        <g className="cursor-cooker__pot" stroke="var(--foreground)" strokeWidth="1.8" strokeLinejoin="round">
-          <path d="M17 30C17 27 25 25 36 25C47 25 55 27 55 30L52 33H20L17 30Z" fill="var(--brand-ring)" />
-          <ellipse cx="36" cy="29" rx="16" ry="3.5" fill="var(--foreground)" />
-          <path d="M20 33C19 40 21 48 28 51C33 53 41 53 46 51C52 48 54 40 52 33C44 36 28 36 20 33Z" fill="url(#cursor-handi-body)" />
-          <path d="M24 37C23 42 25 46 28 48" stroke="var(--accent)" strokeWidth="1.6" strokeLinecap="round" opacity="0.7" />
-          <path d="M25 47C31 50 42 50 48 46" stroke="var(--brand-ring)" strokeWidth="1.2" strokeLinecap="round" opacity="0.75" />
+        <g className="cursor-cooker__pot" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M17 30C17 27 25 25 36 25C47 25 55 27 55 30L52 33H20L17 30Z" />
+          <ellipse cx="36" cy="29" rx="16" ry="3.5" />
+          <path d="M20 33C19 40 21 48 28 51C33 53 41 53 46 51C52 48 54 40 52 33C44 36 28 36 20 33Z" />
+          <path className="cursor-cooker__faint" d="M24 37C23 42 25 46 28 48" strokeWidth="1.1" />
+          <path className="cursor-cooker__faint" d="M25 47C31 50 42 50 48 46" strokeWidth="1.1" />
+          <path className="cursor-cooker__hatch" d="M42 39L45 43M45 37L48 41" strokeWidth="0.9" />
         </g>
 
-        <g className="cursor-cooker__chulha" stroke="var(--foreground)" strokeWidth="1.8" strokeLinejoin="round">
-          <path d="M16 51H57L60 57H13L16 51Z" fill="var(--brand-ring)" />
-          <path d="M15 57H58L55 76H18L15 57Z" fill="url(#cursor-chulha-body)" />
-          <path d="M27 76V67C27 61 31 58 36.5 58C42 58 46 61 46 67V76H27Z" fill="var(--foreground)" />
-          <path d="M20 62H24M49 62H54M21 66H24" stroke="var(--accent)" strokeWidth="1.2" strokeLinecap="round" opacity="0.65" />
-          <path d="M30 73L43 68M31 68L44 74" stroke="var(--brand-ring)" strokeWidth="3" strokeLinecap="round" />
-          <path className="cursor-cooker__flame" d="M36 72C31 68 35 65 37 61C38 65 43 67 40 71C39 73 37 74 36 72Z" fill="var(--makki)" stroke="var(--accent)" strokeWidth="1" />
-          <path d="M18 76H14M55 76H59" strokeLinecap="round" />
+        <g className="cursor-cooker__chulha" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M16 51H57L60 57H13L16 51Z" />
+          <path d="M15 57H58L55 76H18L15 57Z" />
+          <path d="M27 76V67C27 61 31 58 36.5 58C42 58 46 61 46 67V76" />
+          <path className="cursor-cooker__faint" d="M20 62H24M49 62H54M21 66H24" strokeWidth="1.1" />
+          <rect x="28.5" y="70" width="15" height="4.2" rx="2.1" transform="rotate(-6 36 72.1)" />
+          <rect x="29.5" y="65.6" width="14" height="4" rx="2" transform="rotate(5 36.5 67.6)" />
+          <path className="cursor-cooker__flame" d="M36 65C31.5 61.5 35 58.5 37 55C38 58.5 42.5 60.5 40 64C39 65.8 37 66.6 36 65Z" strokeWidth="1.3" />
+          <path className="cursor-cooker__faint" d="M36.5 62.5C35.5 61 36 59.8 36.8 58.5" strokeWidth="0.9" />
+          <path d="M18 76H14M55 76H59" />
         </g>
       </svg>
     </div>
